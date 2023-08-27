@@ -105,3 +105,43 @@ console.log(num3 / num4, "(=====PEMBAGIAN 6/2=====)");
 const base = 3
 const exponent = 4
 console.log(Math.pow (base, exponent), "(=====PANGKAT 3^4=====)");
+
+// RATA-RATA DARI ARRAY
+console.log("(=====RATA-RATA DARI ARRAY=====)");
+
+// Rata-Rata = Jumlah semua elemen / panjang array
+// (5 + 8 + 12 + 4 + 6) / 5
+
+// CARA MANUAL :
+// const sum = arr[0] + arr[1] + arr[2] + arr[3] + arr[4];
+// const avg = sum / arr.length;
+
+// PAKAI LOOPING "FOR"
+const arr = [5,8,12,4]
+let sum = 0;
+for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i]
+}
+
+const avg = sum / arr.length
+console.log(sum, "(=====sum data=====)");
+console.log(arr.length, "(=====banyak data=====)");
+console.log(avg, "(=====rata-rata=====)")
+
+
+// BILANGAN GANJIL ATAU GENAP
+const numb1 = 7
+if (numb1 % 2 === 0) {
+    console.log("genap (=====IF GANJIL GENAP=====)")
+}  else {
+    console.log("ganjil (=====IF GANJIL GENAP=====)");
+}
+
+
+// RANDOM NUMBER
+const min = 1;
+const max = 5;
+const random = Math.random()
+const range = max - min
+const randomWithMinMax = range * random + min
+console.log(randomWithMinMax , "(=====RANDOM NUMBER MIN MAX=====)" );
