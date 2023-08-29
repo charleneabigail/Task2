@@ -139,11 +139,11 @@ console.log(pengurangan);
 
 // NUMBER (PERKALIAN DAN PEMBAGIAN)
 
-function pow (num1, num2) {
+function multiply (num1, num2) {
     return num1*num2
 }
-let power = pow (6,2)
-console.log(power);
+let times = multiply (6,2)
+console.log(times);
 
 function div (num1, num2) {
     return num1/num2
